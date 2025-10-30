@@ -4,11 +4,11 @@ git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 ruby '~> 3.4', engine: 'jruby', engine_version: '10.0.2.0'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
-gem 'rails', '~> 7'
+gem 'rails', '~> 7.0.8'
 
-gem 'activerecord-jdbcpostgresql-adapter', '~>70', platform: 'jruby'
+gem 'activerecord-jdbcsqlite3-adapter'
 
-group :development, :test, :m1, :m2, :m3 do
+group :development do
   # Enable Ruby code linting and autocorrect in Sublime Text 3
   gem 'rubocop', '~> 1.75.5', require: false
   gem 'rubocop-rspec', require: false
@@ -21,3 +21,5 @@ gem 'drb'
 gem 'logger', require: true
 gem 'mutex_m'
 gem 'ostruct'
+
+gem 'puma', '~> 6.6'
