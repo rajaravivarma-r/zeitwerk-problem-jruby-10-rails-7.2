@@ -1,12 +1,12 @@
 source 'https://rubygems.org'
 git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 
-ruby '~> 3.4', engine: 'jruby', engine_version: '10.0.2.0'
+ruby '~> 3.4'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '~> 7.0.8'
 
-gem 'activerecord-jdbcsqlite3-adapter'
+gem 'pg'
 
 group :development do
   # Enable Ruby code linting and autocorrect in Sublime Text 3

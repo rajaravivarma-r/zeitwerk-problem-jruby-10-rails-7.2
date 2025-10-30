@@ -5,10 +5,5 @@
 <div id="workzone_tasks">
   <% @workzone_tasks.each do |workzone_task| %>
     <%= render workzone_task %>
-    <p>
-      <%= link_to "Show this task", workzone_task %>
-    </p>
   <% end %>
 </div>
-
-<%= link_to "New task", new_workzone_task_path %>
