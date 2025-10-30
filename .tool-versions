@@ -1,1 +1,2 @@
-ruby 3.4.2
+# ruby 3.4.2
+ruby jruby-10.0.2.0

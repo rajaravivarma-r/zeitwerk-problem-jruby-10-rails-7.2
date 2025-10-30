@@ -6,7 +6,9 @@ ruby '~> 3.4'
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '~> 7.0.8'
 
-gem 'pg'
+gem 'pg', platforms: :ruby
+
+gem 'activerecord-jdbcpostgresql-adapter', '~>70', platform: 'jruby'
 
 group :development do
   # Enable Ruby code linting and autocorrect in Sublime Text 3
