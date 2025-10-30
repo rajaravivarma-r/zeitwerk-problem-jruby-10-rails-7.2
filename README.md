@@ -1,24 +1,3 @@
-# README
+Repo to reproduce issue described here https://github.com/jruby/jruby/issues/9047
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
-
-Things you may want to cover:
-
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+The particular error is `uninitialized constant Workzone::TasksController` when opening the URL http://localhost:3000/workzone/tasks
