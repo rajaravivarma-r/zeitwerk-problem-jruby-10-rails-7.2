@@ -1,0 +1,10 @@
+<p style="color: green"><%= notice %></p>
+
+<%= render @workzone_task %>
+
+<div>
+  <%= link_to "Edit this task", edit_workzone_task_path(@workzone_task) %> |
+  <%= link_to "Back to tasks", workzone_tasks_path %>
+
+  <%= button_to "Destroy this task", @workzone_task, method: :delete %>
+</div>
